@@ -18,3 +18,4 @@ function getLetter(s) {
   }
   return letter;
 }
+getLetter("adfgt");
