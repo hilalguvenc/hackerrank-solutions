@@ -10,3 +10,4 @@ function vowelsAndConsonants(s) {
   }
   console.log(consonants);
 }
+//s = javascriptloops;
