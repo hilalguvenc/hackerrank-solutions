@@ -14,5 +14,5 @@ function countingValleys(n, s) {
   }
   return countValley;
 }
-cconsole.log(countingValleys(8, "UDDDUDUU"));
+console.log(countingValleys(8, "UDDDUDUU"));
 console.log(countingValleys(12, "DDUUDDUDUUUD"));
