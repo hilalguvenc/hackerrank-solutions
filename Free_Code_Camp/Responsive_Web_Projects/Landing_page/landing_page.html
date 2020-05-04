@@ -3,89 +3,91 @@
   <head>
     <title>Survey Form</title>
     <style>
-            #main {
+      #header {
+        display: flex;
+        flex-direction: row;
+      }
+      #header-img {
+        width: 250px;
+        height: 31px;
+        position: fixed;
+      }
+      #nav-bar {
+        position: fixed;
+        right: 0;
+        font-size: 17px;
+      }
+      .nav-link {
+        margin: 25px;
+      }
+      #main {
         display: flex;
         flex-direction: column;
         text-align: center;
         padding: 50px;
       }
-      #header {
+      label {
+        font-size: 25px;
+        font-weight: bold;
+        font-style: Times New Roman;
+      }
+      #form {
+        margin: 30px;
+      }
+      #email {
+        padding: 5px;
+        width: 23%;
+      }
+      #submit {
+        padding: 7px;
+        width: 15%;
+        font-weight: bold;
+        background-color: #f5f10b;
+      }
+      .content {
+        padding: 0;
+        margin: 0;
+        text-align: center;
+      }
+      footer {
         display: flex;
         flex-direction: row;
-
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        padding: 20px;
+        background-color: #cdc6c5;
+        width: 50%;
       }
-      #header-img {
-        width: 250px;
-        height: 31px;
-        position:fixed;
-      }
-      #nav-bar{
-        position:fixed;
-        right:0;
-        font-size:17px;
-      }
-      .nav-link {
-        margin: 25px;
-      }
-      #sub-main {
+      #pricing {
         display: flex;
         flex-direction: column;
-
+        justify-content: center;
       }
-      label{
-        font-size:25px;
-        font-weight:bold;
-        font-style:Times New Roman;
+      .price-content {
+        margin: 40px;
+        border: 1px outset #2a1613;
+        width: 260px;
+        text-align: center;
+        height: 280px;
+        font-size: 15px;
       }
-      #form{
-        margin:30px;
+      .dolar {
+        font-size: 25px;
+        font-weight: bold;
       }
-      .content{
-        padding:0;
-        margin:0;
-        text-align:center;
+      .select {
+        border: 1px outset #f5f10b;
+        background-color: #f5f10b;
+        width: 90px;
+        height: 40px;
+        font-size: 16px;
       }
-      footer{
-        display:flex;
-        flex-direction:row;
-        align-items:center;
-        justify-content:center;
-        text-align:center;
-        padding:20px;
-        background-color:#CDC6C5;
-        width:50%;
+      h3 {
+        border: 1px outset #cdc6c5;
+        background-color: #cdc6c5;
+        padding: 13px;
       }
-      #pricing{
-        display:flex;
-        flex-direciton:column;
-        justify-content:center;
-
-      }
-      .price-content{
-        margin:40px;
-        border: 1px outset  #2A1613;
-        width:260px;
-        text-align:center;
-        height:280px;
-        font-size:15px;
-      }
-      .dolar{
-        font-size:25px;
-        font-weight:bold;
-      }
-      .select{
-        border: 1px outset  #F5F10B;
-        background-color:#F5F10B;
-        width:90px;
-        height:40px;
-        font-size:16px;
-      }
-      h3{
-        border: 1px outset #CDC6C5;
-        background-color:#CDC6C5;
-        padding:13px;
-      }
-            }
     </style>
   </head>
   <body>
@@ -95,7 +97,7 @@
         src="https://s3.amazonaws.com/freecodecamp/original_trombones.png"
       />
       <nav id="nav-bar">
-        <a href="https://youtu.be/y8Yv4pnO7qc" class="nav-link">Features</a>
+        <a class="nav-link">Features</a>
         <a class="nav-link">How It Works</a>
         <a class="nav-link">Pricing</a>
       </nav>
@@ -110,8 +112,6 @@
         /><br />
         <input type="submit" id="submit" value="GET STARTED" />
       </form>
-    </div>
-    <div id="sub-main">
       <div class="content">
         <h2>Premium Materials</h2>
         <p>
@@ -133,8 +133,8 @@
           faults and we will check and test the pitch of your instrument.
         </p>
       </div>
-      <video width="450" height="270" controls>
-        <source src="https://youtu.be/y8Yv4pnO7qc" />
+      <video id="video" width="450" height="270" controls>
+        <source src="https://youtu.be/y8Yv4pnO7qc" type="video/ogg" />
       </video>
     </div>
     <div id="pricing">
