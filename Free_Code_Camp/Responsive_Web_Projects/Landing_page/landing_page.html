@@ -18,7 +18,7 @@
         font-size: 17px;
       }
       .nav-link {
-        margin: 25px;
+        margin: 45px;
       }
       #main {
         display: flex;
@@ -34,8 +34,14 @@
       #form {
         margin: 30px;
       }
+      #handcrafted {
+        font-weight: bold;
+        font-size: 25px;
+        margin: 0;
+      }
       #email {
         padding: 5px;
+        margin: 10px;
         width: 23%;
       }
       #submit {
@@ -43,6 +49,7 @@
         width: 15%;
         font-weight: bold;
         background-color: #f5f10b;
+        border-color: none;
       }
       .content {
         padding: 0;
@@ -61,7 +68,7 @@
       }
       #pricing {
         display: flex;
-        flex-direction: column;
+        flex-direciton: column;
         justify-content: center;
       }
       .price-content {
@@ -104,7 +111,8 @@
     </header>
     <div id="main">
       <form id="form">
-        <label for="email">Handcrafted, home-made masterpieces</label><br />
+        <p id="handcrafted">Handcrafted, home-made masterpieces</p>
+        <br />
         <input
           id="email"
           type="email"
