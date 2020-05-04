@@ -46,6 +46,7 @@
       }
       #submit {
         padding: 7px;
+        margin: 0;
         width: 15%;
         font-weight: bold;
         background-color: #f5f10b;
@@ -68,7 +69,7 @@
       }
       #pricing {
         display: flex;
-        flex-direciton: column;
+        flex-direction: row;
         justify-content: center;
       }
       .price-content {
@@ -95,6 +96,35 @@
         background-color: #cdc6c5;
         padding: 13px;
       }
+      .grid {
+        display: flex;
+        align-items: center;
+        width: 77%;
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+      }
+      .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 0;
+      }
+      img {
+        width: 70px;
+        height: 70px;
+        padding: 30px;
+      }
+      h2 {
+        margin: 0;
+        padding: 0;
+      }
+      .grid-content {
+        font-size: 20px;
+      }
     </style>
   </head>
   <body>
@@ -120,37 +150,52 @@
         /><br />
         <input type="submit" id="submit" value="GET STARTED" />
       </form>
-      <div class="content">
-        <h2>Premium Materials</h2>
-        <p>
-          Our trombones use the shiniest brass which is sourced locally. This
-          will increase the longevity of your purchase.
-        </p>
+    </div>
+    <div class="grid">
+      <div class="icon">
+        <img src="https://img.icons8.com/color/48/000000/product.png" />
+        <div class="desc">
+          <h2>Premium Materials</h2>
+          <p class="grid-content">
+            Our trombones use the shiniest brass which is sourced locally. This
+            will increase the longevity of your purchase.
+          </p>
+        </div>
       </div>
-      <div class="content">
-        <h2>Fast Shipping</h2>
-        <p>
-          We make sure you recieve your trombone as soon as we have finished
-          making it. We also provide free returns if you are not satisfied.
-        </p>
+    </div>
+    <div class="grid">
+      <div class="icon">
+        <img src="https://img.icons8.com/color/48/000000/free-shipping.png" />
+        <div class="desc">
+          <h2>Fast Shipping</h2>
+          <p class="grid-content">
+            We make sure you recieve your trombone as soon as we have finished
+            making it. We also provide free returns if you are not satisfied.
+          </p>
+        </div>
       </div>
-      <div class="content">
-        <h2>Quality Assurance</h2>
-        <p>
-          For every purchase you make, we will ensure there are no damages or
-          faults and we will check and test the pitch of your instrument.
-        </p>
+    </div>
+    <div class="grid">
+      <div class="icon">
+        <img src="https://img.icons8.com/color/48/000000/good-quality.png" />
+        <div class="desc">
+          <h2>Quality Assurance</h2>
+          <p class="grid-content">
+            For every purchase you make, we will ensure there are no damages or
+            faults and we will check and test the pitch of your instrument.
+          </p>
+        </div>
       </div>
-      <div align="center">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/y8Yv4pnO7qc"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
+    </div>
+    <div align="center">
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/y8Yv4pnO7qc"
+        frameborder="0"
+        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
     </div>
     <div id="pricing">
       <div class="price-content">
@@ -180,12 +225,12 @@
         <p>Lorem ipsum.</p>
         <button class="select">SELECT</button>
       </div>
+      <footer>
+        <p>Privacy</p>
+        <p>Terms</p>
+        <p>Contact</p>
+        <p>Copyright 2016, Original Trombones</p>
+      </footer>
     </div>
-    <footer>
-      <p>Privacy</p>
-      <p>Terms</p>
-      <p>Contact</p>
-      <p>Copyright 2016, Original Trombones</p>
-    </footer>
   </body>
 </html>
