@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Survey Form</title>
+    <title>Landing Page</title>
     <style>
       #header {
         display: flex;
@@ -26,13 +26,13 @@
         text-align: center;
         padding: 50px;
       }
+      #form {
+        margin: 0;
+      }
       label {
         font-size: 25px;
         font-weight: bold;
         font-style: Times New Roman;
-      }
-      #form {
-        margin: 30px;
       }
       #handcrafted {
         font-weight: bold;
@@ -46,16 +46,43 @@
       }
       #submit {
         padding: 7px;
-        margin: 0;
+        margin: 10px;
         width: 15%;
         font-weight: bold;
         background-color: #f5f10b;
         border-color: none;
       }
-      .content {
-        padding: 0;
+      .grid {
+        display: flex;
+        flex-direction: column;
+      }
+      .icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+      }
+      .desc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 60%;
+      }
+      img {
+        width: 70px;
+        height: 70px;
+        padding: 30px;
+      }
+      h2 {
         margin: 0;
-        text-align: center;
+        padding: 0;
+      }
+      .grid-content {
+        font-size: 20px;
+        margin: 0;
+      }
+      iframe {
+        margin: 50px;
       }
       #pricing {
         display: flex;
@@ -64,11 +91,12 @@
         align-items: center;
       }
       .price-content {
+        padding: 0;
         margin: 40px;
         border: 1px outset #2a1613;
         width: 260px;
         text-align: center;
-        height: 280px;
+        height: 320px;
         font-size: 15px;
       }
       .dolar {
@@ -86,51 +114,26 @@
         border: 1px outset #cdc6c5;
         background-color: #cdc6c5;
         padding: 13px;
-      }
-      .grid {
-        display: flex;
-        width: 77%;
-      }
-      .icon {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        width: 100vw;
-      }
-      .desc {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
         margin: 0;
-      }
-      .grid-content {
-        margin: 0;
-      }
-      img {
-        width: 70px;
-        height: 70px;
-        padding: 30px;
-      }
-      h2 {
-        margin: 0;
-        padding: 0;
-      }
-      .grid-content {
-        font-size: 20px;
       }
       footer {
+        position: absolute;
         margin-top: 30px;
         background-color: #ddd;
-        padding: 20px;
-        width: 100vw;
+        padding: 6px;
+        width: 70%;
+        left: 200px;
       }
       ul {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         list-style-type: none;
+        margin: 0;
       }
       li {
+        font-size: 17px;
+        font-weight: bold;
         padding: 10px;
       }
       a {
