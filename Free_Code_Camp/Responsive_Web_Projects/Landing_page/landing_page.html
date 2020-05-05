@@ -57,20 +57,11 @@
         margin: 0;
         text-align: center;
       }
-      footer {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        justify-content: center;
-        text-align: center;
-        padding: 20px;
-        background-color: #cdc6c5;
-        width: 50%;
-      }
       #pricing {
         display: flex;
         flex-direction: row;
         justify-content: center;
+        align-items: center;
       }
       .price-content {
         margin: 40px;
@@ -98,7 +89,6 @@
       }
       .grid {
         display: flex;
-        align-items: center;
         width: 77%;
       }
       .icon {
@@ -113,6 +103,9 @@
         justify-content: center;
         margin: 0;
       }
+      .grid-content {
+        margin: 0;
+      }
       img {
         width: 70px;
         height: 70px;
@@ -124,6 +117,31 @@
       }
       .grid-content {
         font-size: 20px;
+      }
+      footer {
+        margin-top: 30px;
+        background-color: #ddd;
+        padding: 20px;
+        width: 100vw;
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        list-style-type: none;
+      }
+      li {
+        padding: 10px;
+      }
+      a {
+        cursor: pointer;
+        color: black;
+        text-decoration: none;
+      }
+      span {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
       }
     </style>
   </head>
@@ -225,12 +243,14 @@
         <p>Lorem ipsum.</p>
         <button class="select">SELECT</button>
       </div>
-      <footer>
-        <p>Privacy</p>
-        <p>Terms</p>
-        <p>Contact</p>
-        <p>Copyright 2016, Original Trombones</p>
-      </footer>
     </div>
+    <footer>
+      <ul>
+        <li><a href="#">Privacy</a></li>
+        <li><a href="#">Terms</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+      <span>Copyright 2016, Original Trombones</span>
+    </footer>
   </body>
 </html>
