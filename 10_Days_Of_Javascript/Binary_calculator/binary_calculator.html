@@ -35,16 +35,16 @@
     </style>
   </head>
   <body>
+    <div id="res"></div>
     <div id="btns">
-      <button id="res"></button>
-      <button id="btn0">0</button>
-      <button id="btn1">1</button>
-      <button id="btnClr">C</button>
-      <button id="btnEql">=</button>
-      <button id="btnSum">+</button>
-      <button id="btnSub">-</button>
-      <button id="btnMul">*</button>
-      <button id="btnDiv">/</button>
+      <button id="btn0" onclick="clickZero()">0</button>
+      <button id="btn1" onclick="clickOne()">1</button>
+      <button id="btnClr" onclick="clickClear()">C</button>
+      <button id="btnEql" onclick="clickEquals()">=</button>
+      <button id="btnSum" onclick="clickSum()">+</button>
+      <button id="btnSub" onclick="clickSub()">-</button>
+      <button id="btnMul" onclick="clickMul()">*</button>
+      <button id="btnDiv" onclick="clickDiv()">/</button>
     </div>
     <script>
       document.getElementById("btn0") = function () {
